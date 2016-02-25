@@ -13,7 +13,7 @@ public class AnotherBoardPanel extends JPanel {
 	public AnotherBoardPanel() {
 		setLayout(new FlowLayout());
 		JFrame jf = new JFrame();
-		
+
 		setBackground(Color.decode("#001FFF"));
 		// JButton b1 = new JButton("Button 1");
 		// b1.setSize(300, 300);
