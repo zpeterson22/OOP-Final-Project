@@ -9,30 +9,20 @@ import javax.swing.JTabbedPane;
 
 public class MPSkinsMain {
 
-	// FlowPanel fp = new FlowPanel();
-
 	public static void main(String[] args) {
-
-		// SoundFileReader reader = new SoundFileReader();
-		MusicController mc = new MusicController();
-		
-		
+		// MusicController mc = new MusicController();
 
 		JFrame frame = new JFrame("Zach's Music Player");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JTabbedPane tp = new JTabbedPane();
-		tp.addTab("Border", new DefaultLayout());
+		// this is an easy fix to repeated code, does not let you chose the
+		// layout, this just show each layout at the same time
+		tp.addTab("Music Player 1", new LayoutOne());
+//		tp.addTab("Music Player 2", new LayoutTwo());
+//		tp.addTab("Music Player 3", new LayoutThree());
 		frame.getContentPane().add(tp);
-		// JPanel panel = new JPanel();
 		frame.pack();
 		frame.setVisible(true);
-
-		// JButton button = new JButton();
-		// button.setBounds(200, 200, 150, 150);
-		// button.setVisible(true);
-		// //button.paintImmediately(200, 200, 150, 150);
-		//
-		// frame.add(panel);
 
 	}
 
